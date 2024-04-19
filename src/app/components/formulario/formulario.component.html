@@ -1,0 +1,25 @@
+<header class="header">
+    <h2>{{ formularioEditar ? 'Editar dados do' : 'Adicionar novo' }} aluno</h2>
+</header>
+<form [formGroup]="formulario" (ngSubmit)="aoClicaremSalvar()">
+    <div>
+        <label for="nome-aluno">Nome:</label>
+        <input id="nome-aluno" type="text" formControlName="nome">
+    </div>
+    <div>
+        <label for="email-aluno">Email:</label>
+        <input id="email-aluno" type="email" formControlName="email">
+    </div>
+    <div>
+        <label for="dataNascimento-aluno">Data de nascimento:</label>
+        <input id="dataNascimento-aluno" type="date" formControlName="dataNascimento">
+    </div>
+    <div>
+        <label for="sexo-aluno">Sexo:</label>
+        <input id="sexo-aluno" type="text" formControlName="sexo">
+    </div>
+    <div class="botoes">
+        <button type="submit">Salvar</button>
+        <button type="button" (click)="aoClicaremCancelar()">Cancelar</button>
+    </div>
+</form>

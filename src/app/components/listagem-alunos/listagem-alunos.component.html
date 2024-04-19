@@ -1,0 +1,27 @@
+<header>
+    <h2>Alunos</h2>
+    <button (click)="aoClicarEmAdicionar()">Adicionar novo aluno</button>
+</header>
+<table class="tabela">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Data de nascimento</th>
+            <th>Sexo</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of alunos; let i = index">
+            <td>{{ aluno.Nome }}</td>
+            <td>{{ aluno.Email }}</td>
+            <td>{{ aluno.DataNascimento }}</td>
+            <td>{{ aluno.Sexo }}</td>
+            <td>
+                <button (click)="aoClicarEmEditar(i)">Editar</button>
+                <button (click)="aoClicarEmRemover(i)">Remover</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

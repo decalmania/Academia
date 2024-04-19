@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0wght@0,700;1&display=swap');
+
+:host {
+    --cor-primaria: #212529;
+    --cor-fundo-tabela: #f5f5f5;
+    --cor-texto-botao: #fff;
+    --cor-botao: #2196f3;
+    --cor-botao-hover: #0c7cd5;
+    --fonte-texto: "Montserrat", sans-serif;
+    --borda-tabela: 1px solid #212529;
+}
+
+* {
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--cor-primaria);
+    font-weight: 24px;
+}
+
+table {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--cor-fundo-tabela);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+tr {
+    color: var(--cor-primaria);
+}
+
+th {
+    text-align: start;
+    font-weight: 700;
+    border-bottom: var(--borda-tabela);
+    padding: 10px;
+}
+
+td {
+    border-bottom: var(--borda-tabela);
+    padding: 10px;
+}
+
+button {
+    color: var(--cor-texto-botao);
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}

@@ -1,27 +1,17 @@
-# AlunosTeste
+Aplicação simples que consome inicialmente uma API REST contendo uma lista de alunos de uma academia e a partir dessa lista os dados são manipulados localmente para realizar as operações do CRUD.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+Para rodar essa aplicação siga o passo a passo:
+1- Instalar os requisitos necessários:
+    - Node.js -> No site oficial do Node.js;
+    - npm -> no terminal ou no prompt de comando execute os comandos: 
+        - npm install -g @angular/cli (globalmente);
+        - npm install (na raiz do projeto).
+        
+-> para navegar até a raiz do projeto, execute: cd nome-do-projeto.
 
-## Development server
+2- Compilar a aplicação:
+    - Na raiz do projeto, execute: ng build.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3- Executar a aplicação:
+    - Na raiz do projeto, execute: ng serve e copie e cole o localhost no seu navegador;
+    - ou execute: ng serve -o, que abre a aplicação automaticamente no seu navegador.

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0wght@0,700;1&display=swap');
+
+:host {
+    --cor-primaria: #212529;
+    --cor-texto-botao: #fff;
+    --cor-botao: #2196f3;
+    --cor-botao-hover: #0c7cd5;
+    --fonte-texto: "Montserrat", sans-serif;
+    --borda-input: 1px solid #ced4da;
+    --margem-elementos: 10px 0 10px 0;
+}
+
+* {
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    color: var(--cor-primaria);
+}   
+
+header {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: 700;
+    font-weight: 24px;
+    margin: var(--margem-elementos);
+}
+
+label {
+    display: block;
+    margin: var(--margem-elementos);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: var(--borda-input);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+}
+
+button {
+    color: var(--cor-texto-botao);
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 5px 5px 5px 0;
+}
+
+button:hover {
+    background-color: var(--cor-botao-hover);
+}
